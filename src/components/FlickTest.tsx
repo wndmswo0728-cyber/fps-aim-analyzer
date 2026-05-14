@@ -49,8 +49,8 @@ function generateTarget(canvasWidth: number, canvasHeight: number, previousCente
 }
 
 export function FlickTest({ onComplete }: FlickTestProps) {
-  const [timeLeft, setTimeLeft] = useState(30);
-  const [targetsRemaining, setTargetsRemaining] = useState(FLICK_TEST_CONFIG.MAX_TARGETS);
+  const [timeLeft, setTimeLeft] = useState<number>(30);
+  const [targetsRemaining, setTargetsRemaining] = useState<number>(FLICK_TEST_CONFIG.MAX_TARGETS);
   const [isReady, setIsReady] = useState(false);
 
   const targetRef = useRef<TargetPosition | null>(null);
